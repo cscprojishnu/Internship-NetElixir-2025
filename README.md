@@ -56,3 +56,12 @@ Install requirements using:
 
 ```bash
 pip install -r requirements.txt
+
+
+
+
+🧪 Running the App
+bash
+Copy
+Edit
+python manage.py runserver
