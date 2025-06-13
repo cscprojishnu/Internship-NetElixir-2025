@@ -1,0 +1,21 @@
+Is there only one primary conversion action?
+If the primary conversion action is "Purchase," is it capturing conversions and revenue properly?
+Are campaign names consistent across the account?
+What percentage of ad groups have more than 20 keywords?
+Are Search Campaigns or Display Campaigns with conversions losing Impression Share due to budget limitations?
+Are there any legacy BMM keywords?
+Are there active search ad groups that have not had any conversions in the last 90 days?
+Are there any seasonal keywords, like back-to-school or holiday keywords running that are not relevant to the current season?
+Are there active keywords with low search volumes that are not receiving enough impressions?
+Are negative dynamic targeting options set for all Dynamic Search Ads campaigns?
+Are there landing pages (Final URL) at the keyword level, and are they relevant for the ad message, keywords, and targeting?
+Are there any broken links or redirections in final URLs?
+Are there still legacy Expanded Text Ads (ETAs) live in the account?
+Is there at least one RSA per ad group with an ad strength of excellent?
+Are the RSAs leveraging all available headlines (15) and description lines (4)?
+Does the account have ad extensions implemented, such as sitelinks, callouts, calls, structured snippets, and promos?
+Do all sitelinks have expanded sitelink text filled in (descriptions)?
+Are Affinity and In-Market audiences applied to the campaigns in "Observation" mode at Campaign Level?
+Have both customer data and interests been included in the audience signal for Performance Max?
+Do Performance Max campaign asset groups have at least one customized video?
+Are there active display ad groups with no conversions or view-through conversions in the last 90 days?
