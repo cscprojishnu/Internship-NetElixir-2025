@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campaign QA Checklist</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #003366; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .center { text-align: center; margin-top: 30px; }
+        .button { padding: 10px 20px; background-color: #003366; color: white; border: none; cursor: pointer; }
+        .button:hover { background-color: #0055aa; }
+    </style>
+</head>
+<body>
+
+    <h2>📊 Google Ads Campaign QA Checklist</h2>
+
+    {% if results %}
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Result</th>
+            </tr>
+            {% for row in results %}
+            <tr>
+                <td>{{ row.Question }}</td>
+                <td>{{ row.Result|safe }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="center">
+            <a href="{{ download_url }}"><button class="button">📥 Download QA Excel Report</button></a>
+        </div>
+    {% else %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label>Select Excel File:</label><br><br>
+            <input type="file" name="file" required><br><br>
+            <button type="submit" class="button">Upload and Analyze</button>
+        </form>
+    {% endif %}
+
+</body>
+</html>

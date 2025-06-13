@@ -1,0 +1,17 @@
+def upload_file_view(request):
+    if request.method == "POST":
+        file = request.FILES["file"]
+        excel_file = pd.ExcelFile(file)
+        sheet_dict = {sheet: excel_file.parse(sheet) for sheet in excel_file.sheet_names}
+
+        results = run_all_checks(sheet_dict)
+
+        # Save to Excel
+        output_path = os.path.join(settings.MEDIA_ROOT, "qa_report.xlsx")
+        save_results_to_excel(results, output_path)
+
+        return render(request, "results.html", {
+            "results": results,
+            "download_url": "/media/qa_report.xlsx"
+        })
+    return render(request, "upload.html")
