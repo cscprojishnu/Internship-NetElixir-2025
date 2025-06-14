@@ -59,9 +59,11 @@ pip install -r requirements.txt
 ```
 
 
-**FOR REPORT**: [Click Here](./Summer_Internship_Report.pdf)
-
 🧪 Running the App
 ```bash
 python manage.py runserver
 ```
+
+
+
+**FOR REPORT**: [Click Here](./Summer_Internship_Report.pdf)
